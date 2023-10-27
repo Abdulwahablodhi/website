@@ -1,0 +1,62 @@
+/* Partner section container */
+.partner {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 3rem;
+  align-items: center;
+}
+
+/* Heading for the partner section */
+.partner-heading {
+  font-style: normal;
+  font-weight: 400;
+  margin: 0%;
+}
+
+/* Text describing partners */
+.partner-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #081a2b;
+}
+
+/* Container for partner logos */
+.partner-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Styles for individual partner logos */
+.partner-logo-img {
+  width: 12%;
+  height: 12%;
+}
+
+/* Media query for screens up to 600px width */
+@media screen and (max-width: 600px) {
+  /* Allow partner logos to wrap when the screen is narrower */
+  .partner-logos {
+    flex-wrap: wrap;
+  }
+
+  /* Adjust the size and spacing of partner logos */
+  .partner-logo-img {
+    width: 21%;
+    padding: 1rem 0rem;
+  }
+
+  /* Reduce the margin for the partner section */
+  .partner {
+    margin: 0rem 1rem;
+  }
+
+  /* Hide the test2 element (assuming it's not used) */
+  .test2 {
+    display: none;
+  }
+}

@@ -1,0 +1,121 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 3rem 3rem;
+  /* Sets the display and layout for the "blog" section. */
+}
+
+.blog-heading {
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+  /* Styles the heading in the "blog" section. */
+}
+
+.blog-cards-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* Creates a container for blog cards with spacing and alignment. */
+}
+
+.blog-img {
+  width: 100%;
+  /* Sets the width of the blog images to 100%. */
+}
+
+.blog-content {
+  height: 15rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0.3rem 3rem;
+  /* Styles the main content of each blog card with background and shadow. */
+}
+
+.blog-content-shadow1 {
+  border-bottom: #eb7b37 0.3rem solid;
+  /* Adds a colored shadow to the bottom of the first blog card. */
+}
+
+.blog-content-shadow2 {
+  border-bottom: #fad606 0.3rem solid;
+  /* Adds a colored shadow to the bottom of the second blog card. */
+}
+
+.blog-details-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* Arranges details in the blog card with spacing. */
+}
+
+.blog-details {
+  margin: 0px;
+  color: #a88427;
+  /* Styles the details section of the blog card. */
+}
+
+.blog-content-text {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  /* Styles the text content in the blog card. */
+}
+
+.blog-readmore {
+  color: black;
+  margin-top: 3rem;
+  text-align: center;
+  /* Styles the "Read more" link in the blog card. */
+}
+
+.blog-btn {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 0.8rem 0rem;
+  background: #ffffff;
+  border: 1px solid #0d89ca;
+  margin: 6rem 0rem 1rem;
+  width: 13rem;
+  font-weight: 400;
+  font-size: 1rem;
+  align-items: center;
+  /* Styles the "Show all" button in the blog section. */
+}
+
+.blog-card {
+  max-width: 46%;
+  /* Sets the maximum width of the blog cards. */
+}
+
+@media screen and (max-width: 600px) {
+  .blog-cards-div {
+    flex-direction: column;
+  }
+  .blog {
+    margin: 1rem;
+  }
+  .blog2 {
+    display: none;
+    /* Hides the second blog card on smaller screens. */
+  }
+  .blog-readmore {
+    text-decoration: underline blue 2px;
+    /* Adds an underline to the "Read more" link on smaller screens. */
+  }
+  .blog-content-text {
+    font-size: 1rem;
+    /* Adjusts the text size for smaller screens. */
+  }
+  .blog-content {
+    height: auto;
+    padding: 0.3rem 1rem;
+    /* Adjusts the blog content size and padding for smaller screens. */
+  }
+  .blog-card {
+    max-width: 100%;
+    /* Sets the maximum width of the blog cards on smaller screens. */
+  }
+}

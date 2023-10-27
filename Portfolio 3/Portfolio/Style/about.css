@@ -1,0 +1,101 @@
+.about {
+  display: flex;
+  padding: 4rem 2rem;
+  justify-content: space-around;
+  /* Creates a flex container for the "about" section, with spacing and alignment. */
+}
+
+.about-text {
+  width: 50%;
+  /* Sets the width of the text content in the "about" section. */
+}
+
+.about-btn {
+  display: none;
+  flex-direction: column;
+  padding: 0.8rem 0rem;
+  border: none;
+  color: #ffffff;
+  width: 10rem;
+  font-weight: 400;
+  font-size: 1rem;
+  align-items: center;
+  background: #0d89ca;
+  /* Defines the style of the hidden button in the "about" section. */
+}
+
+.about-heading {
+  font-weight: 400;
+  font-size: 3rem;
+  /* Sets the styling for the heading in the "about" section. */
+}
+
+.about-content {
+  margin-right: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  max-height: 24rem;
+  overflow: hidden;
+  color: #081a2b;
+  /* Styles the main content text in the "about" section with max height and overflow. */
+}
+
+.about-img-div {
+  display: flex;
+  /* Creates a flex container for the "about-img" section. */
+}
+
+.about-img {
+  max-height: 30rem;
+  width: 100%;
+  justify-self: flex-end;
+  /* Styles the about image with max height and alignment. */
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    padding: 0rem 1rem;
+    margin-block-start: 3rem;
+    /* Adjusts the layout of the "about" section for smaller screens. */
+  }
+
+  .mobile-cut {
+    display: none;
+    /* Hides elements with the class "mobile-cut" on smaller screens. */
+  }
+
+  .about-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* Adjusts the heading style for smaller screens. */
+  }
+
+  .about-btn {
+    display: flex;
+    margin: 4rem 0rem;
+    /* Displays the hidden button on smaller screens with spacing. */
+  }
+
+  .about-img {
+    justify-self: center;
+    width: 100%;
+    height: auto;
+    /* Adjusts the image alignment and size for smaller screens. */
+  }
+
+  .about-content {
+    font-size: 1.5rem;
+    margin-right: 0rem;
+    /* Adjusts the text size and margin for smaller screens. */
+  }
+
+  .about-text {
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    /* Modifies text layout and alignment for smaller screens. */
+  }
+}

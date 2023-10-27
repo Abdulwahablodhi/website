@@ -1,0 +1,130 @@
+/* Testimonial section container */
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 3rem;
+  align-items: center;
+}
+
+/* Heading for the testimonial section */
+.testimonial-heading {
+  margin-bottom: 4rem;
+}
+
+/* Text styles for testimonials */
+.testimonial-text {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: rgba(8, 26, 43, 0.75);
+}
+
+/* Container for testimonial cards */
+.testimonial-cards-div {
+  display: flex;
+  flex-direction: row;
+  align-self: normal;
+  flex-wrap: wrap;
+  margin: 2rem 0rem;
+  gap: 3rem;
+  justify-content: center;
+}
+
+/* Styles for individual testimonial cards */
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 10px rgba(162, 184, 193, 0.5);
+}
+
+/* Styles for the upper part of testimonial cards */
+.testimonial-card-uper {
+  margin: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container for testimonial stars/icons */
+.testimonial-cards-icons {
+  display: flex;
+  max-width: 90%;
+}
+
+/* Styles for individual star icons in testimonials */
+.testimonial-star {
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Styles for the text in testimonial cards */
+.testimonial-card-text {
+  width: 18rem;
+  height: 14rem;
+  text-align: center;
+  color: #001c27;
+}
+
+/* Styles for the profile image in testimonial cards */
+.testimonial-card-profile {
+  margin-bottom: -25%;
+  width: 100px;
+  height: 99.47px;
+}
+
+/* Styles for the lower part of testimonial cards */
+.testimonial-card-lower {
+  display: flex;
+  justify-content: center;
+  background: #a2b8c1;
+  padding: 3rem 0rem 2rem;
+}
+
+/* Styles for the testimonial button */
+.testimonial-btn {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 0.8rem 0rem;
+  border: none;
+  color: #ffffff;
+  margin: 1rem 0rem 3rem;
+  width: 13rem;
+  font-weight: 400;
+  font-size: 1rem;
+  align-items: center;
+  background: #0d89ca;
+}
+
+/* Media query for screens up to 600px width */
+@media screen and (max-width: 600px) {
+  /* Adjust the layout of testimonial cards for smaller screens */
+  .testimonial-cards-div {
+    flex-direction: column;
+  }
+
+  /* Reduce margin for the testimonial section */
+  .testimonial {
+    margin: 0rem 1rem;
+  }
+
+  /* Adjust margin for the upper part of testimonial cards */
+  .testimonial-card-uper {
+    margin: 1rem;
+  }
+
+  /* Adjust margin for the profile image */
+  .testimonial-card-profile {
+    margin-bottom: -18%;
+  }
+
+  /* Adjust width and text overflow for testimonial text */
+  .testimonial-card-text {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Adjust padding for stars/icons in testimonials */
+  .testimonial-star {
+    padding-left: 1rem;
+  }
+}

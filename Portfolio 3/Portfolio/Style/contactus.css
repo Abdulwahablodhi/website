@@ -1,0 +1,200 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 3rem;
+  padding-bottom: 3rem;
+  align-items: center;
+  /* Styles the "contact" section, sets alignment, and margin. */
+}
+
+.contact-heading {
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #252b42;
+  margin: 0%;
+  /* Styles the heading in the "contact" section. */
+}
+
+.contact-text {
+  color: #000;
+  /* Styles the text content in the "contact" section. */
+}
+
+.contact-inner {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  /* Creates a container for contact form and details with spacing. */
+}
+
+.contact-form {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Styles the contact form with background, border, and shadow. */
+}
+
+.form {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  /* Styles the form inside the contact form. */
+}
+
+.form-head {
+  text-align: center;
+  margin-top: 0px;
+  /* Styles the form header text. */
+}
+
+.form-input {
+  padding: 19px 20px;
+  background: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 1.5rem;
+  /* Styles the input fields in the form. */
+}
+
+.form-msg {
+  min-width: 353px;
+  max-width: 353px;
+  max-height: 193px;
+  min-height: 193px;
+  /* Styles the message input field in the form. */
+}
+
+.contact-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 38px;
+  gap: 10px;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  width: 145px;
+  height: 56px;
+  border: none;
+  background: #0d89ca;
+  /* Styles the "Send" button in the form. */
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem;
+  /* Styles the contact details section. */
+}
+
+.contact-information {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Arranges contact information with spacing. */
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  /* Styles the location information. */
+}
+
+.location-text {
+  text-align: center;
+  /* Styles the location text. */
+}
+
+.map {
+  display: flex;
+  justify-content: space-around;
+  /* Styles the map section. */
+}
+
+.social-icon {
+  margin: 2rem;
+  /* Adds margin to social icons. */
+}
+
+.social-img {
+  margin: 1rem;
+  /* Adds margin to social icons. */
+}
+
+@media screen and (max-width: 1090px) {
+  .contact-inner {
+    flex-direction: column;
+  }
+  .contact-form {
+    align-self: center;
+    margin: 1rem 0rem;
+    /* Adjusts the layout of contact elements on smaller screens. */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-inner {
+    flex-direction: column;
+    /* Adjusts the layout of contact elements on even smaller screens. */
+  }
+
+  .contact-form {
+    align-self: center;
+    margin: 1rem 0rem;
+    /* Adjusts the layout of the contact form on smaller screens. */
+  }
+
+  .form-input {
+    padding: 19px 0.5rem;
+    /* Adjusts padding for form inputs on smaller screens. */
+  }
+
+  .map {
+    display: none;
+    /* Hides the map on smaller screens. */
+  }
+
+  .location-mobile {
+    flex-direction: row;
+    justify-content: center;
+    padding-block-end: 3rem;
+    /* Adjusts the location display on smaller screens. */
+  }
+
+  .location-text-mobile {
+    width: 60%;
+    /* Styles the location text on smaller screens. */
+  }
+
+  .location {
+    width: auto;
+    font-size: 12px;
+    /* Adjusts the location element on smaller screens. */
+  }
+
+  .contact-information {
+    flex-wrap: wrap;
+    /* Wraps contact information on smaller screens. */
+  }
+
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    /* Adjusts the social icons display on smaller screens. */
+  }
+
+  .form-msg {
+    min-width: 80%;
+    max-width: 90%;
+    max-height: 90%;
+    min-height: 80%;
+    /* Adjusts the message input field on smaller screens. */
+  }
+}
